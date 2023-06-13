@@ -11,7 +11,7 @@ function App() {
         <img src={mainLogo} alt="логотип сайта" className="welcomePage-header-img" />
         <h1 className="welcomePage-header-title">АККОМПАНЕМЕНТ</h1>
         <div className="welcomePage-header-subtitle">
-          <img src={play} alt="иконка play" className="welcomePage-subtitle-img" />
+          <img src={play} alt="иконка play" className="welcomePage-header-subtitle-img" />
           <p className="welcomePage-header-subtitle-text">ДЛЯ ВСЕХ</p>
         </div>
       </div>

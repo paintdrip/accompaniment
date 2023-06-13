@@ -16,6 +16,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  width: 100%;
 
   &-header {
     display: flex;
@@ -26,7 +28,6 @@ body {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 70px;
     }
     &-title {
       display: flex;
@@ -43,15 +44,14 @@ body {
         margin-left: 5px;
         font-weight: 500;
       }
-    }
-  }
 
-  // поправить потом расположение
-  .welcomePage-subtitle-img {
-    display: flex;
-    align-self: center;
-    width: 15px;
-    height: 15px;
+      &-img {
+        display: flex;
+        align-self: center;
+        width: 15px;
+        height: 15px;
+      }
+    }
   }
 
   &-description {
