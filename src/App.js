@@ -1,22 +1,29 @@
-import './App.css';
+import './scss/App.scss';
+
+import mainLogo from './images/mainLogo.png';
+import play from './images/play.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="welcomePage">
+      {/* Верхний блок */}
+      <div className="welcomePage-header">
+        <img src={mainLogo} alt="логотип сайта" className="welcomePage-header-img" />
+        <h1 className="welcomePage-header-title">АККОМПАНЕМЕНТ</h1>
+        <div className="welcomePage-header-subtitle">
+          <img src={play} alt="иконка play" className="welcomePage-subtitle-img" />
+          <p className="welcomePage-header-subtitle-text">ДЛЯ ВСЕХ</p>
+        </div>
+      </div>
+      {/* Нижний блок */}
+      <div className="welcomePage-description">
+        <h4 className="welcomePage-description-text">
+          ЗДЕСЬ ГОТОВЯТСЯ СОЛИСТЫ <br />
+          ДЛЯ БОЛЬШОЙ СЦЕНЫ
+        </h4>
+        <img src={play} alt="иконка play" className="welcomePage-description-img" />
+      </div>
+    </section>
   );
 }
 
