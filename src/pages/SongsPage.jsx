@@ -74,6 +74,44 @@ export const SongsPage = () => {
             <img src={stick} alt="Разделительный контур" className="audioBlocks-main-stick" />
             <img src={piano_logo} alt="Иконка пианино" className="audioBlocks-main-piano" />
           </div>
+
+          <div className="audioBlocks-main">
+            <p className="audioBlocks-main-symbol">▶</p>
+            <p className="audioBlocks-main-name">
+              Бах
+              <br />
+              Иоганн
+              <br />
+              Себастьян
+            </p>
+            <img src={stick} alt="Разделительный контур" className="audioBlocks-main-stick" />
+            <p className="audioBlocks-main-description">
+              Концерт № 1 для скрипки и струнных (ля минор)
+              <br />
+              BWV 1041
+            </p>
+            <img src={stick} alt="Разделительный контур" className="audioBlocks-main-stick" />
+            <img src={piano_logo} alt="Иконка пианино" className="audioBlocks-main-piano" />
+          </div>
+
+          <div className="audioBlocks-main">
+            <p className="audioBlocks-main-symbol">▶</p>
+            <p className="audioBlocks-main-name">
+              Бах
+              <br />
+              Иоганн
+              <br />
+              Себастьян
+            </p>
+            <img src={stick} alt="Разделительный контур" className="audioBlocks-main-stick" />
+            <p className="audioBlocks-main-description">
+              Концерт № 1 для скрипки и струнных (ля минор)
+              <br />
+              BWV 1041
+            </p>
+            <img src={stick} alt="Разделительный контур" className="audioBlocks-main-stick" />
+            <img src={piano_logo} alt="Иконка пианино" className="audioBlocks-main-piano" />
+          </div>
         </section>
       </div>
     </section>
