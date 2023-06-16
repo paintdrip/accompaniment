@@ -41,13 +41,13 @@
     // стилизация поля инпута с иконкой поиска
     &-entering {
       border: 1px solid #ffffff;
-      display: flex;
-      width: 70.5%; //ПОФИКСИТЬ, СДЕЛАТЬ АДАПТИВНЫМ
+      display: flex; //ПОФИКСИТЬ, СДЕЛАТЬ АДАПТИВНЫМ
       justify-content: space-between;
       align-items: center;
       padding: 0 20px;
       margin-top: 30px;
       height: 70px;
+      width: 1355px;
       border-radius: 30px;
       overflow: hidden;
       background-color: transparent;
@@ -110,11 +110,13 @@
 
     &-name {
       color: #000000;
+      font-size: 16px;
     }
 
     &-description {
       color: #000000;
       margin-right: 365px;
+      font-size: 16px;
     }
 
     &-stick {
@@ -158,4 +160,225 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1620px) {
+  .songsPage {
+    &-main {
+      &-buttons {
+        &-up {
+          display: grid;
+          justify-content: center;
+          grid-template-columns: 230px 230px;
+          gap: 20px;
+          margin-bottom: 25px;
+          margin-top: 50px;
+        }
+
+        &-down {
+          display: grid;
+          grid-template-columns: 230px 230px 230px 230px;
+          gap: 25px;
+        }
+      }
+
+      &-entering {
+        width: 995px;
+      }
+    }
+  }
+
+  .bth {
+    padding: 10px 21px;
+    font-size: 12px;
+
+    &-main {
+      padding: 10px 21px;
+      font-size: 12px;
+    }
+  }
+
+  .audioBlocks {
+    &-main {
+      &-description {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1035px) {
+  //тут редачу
+  .songsPage {
+    &-main {
+      &-buttons {
+        &-up {
+          display: grid;
+          justify-content: center;
+          grid-template-columns: 230px 230px;
+          gap: 20px;
+          margin-bottom: 25px;
+          margin-top: 50px;
+        }
+
+        &-down {
+          display: grid;
+          grid-template-columns: 153px 153px 153px 153px;
+          gap: 25px;
+        }
+      }
+
+      &-entering {
+        width: 687px;
+      }
+    }
+  }
+
+  .bth {
+    padding: 10px 21px;
+    font-size: 12px;
+
+    &-main {
+      padding: 10px 21px;
+      font-size: 12px;
+    }
+  }
+
+  .audioBlocks {
+    &-main {
+      height: 80px;
+      padding: 0 30px;
+      margin-bottom: 20px;
+
+      &-symbol {
+        font-size: 40px;
+        margin-right: 25px;
+      }
+
+      &-name {
+        font-size: 14px;
+      }
+
+      &-description {
+        width: 250px;
+        font-size: 14px;
+      }
+
+      &-stick {
+        height: 65px;
+        width: 65px;
+      }
+
+      &-piano {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 810px) {
+  .songsPage {
+    &-main {
+      &-titleblock {
+        &-logo {
+          height: 70px;
+          margin-right: 15px;
+        }
+        &-text {
+          font-size: 24px;
+          font-weight: 600;
+        }
+      }
+
+      &-buttons {
+        justify-content: normal;
+        margin: 0 25px;
+
+        &-up {
+          display: grid;
+          justify-content: center;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          margin-bottom: 25px;
+          margin-top: 50px;
+        }
+
+        &-down {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 12px 25px;
+        }
+      }
+
+      &-entering {
+        margin: 30px 25px 0 25px;
+        height: 34px;
+        width: auto;
+
+        &-input {
+          font-size: 10px;
+        }
+
+        &-btn {
+          border: none;
+          background-color: transparent;
+        }
+
+        &-image {
+          height: 15px;
+        }
+      }
+    }
+  }
+
+  .bth {
+    padding: 10px 21px;
+    font-size: 10px;
+
+    &-main {
+      padding: 10px 21px;
+      font-size: 10px;
+    }
+  }
+
+  .centering {
+    display: block;
+  }
+
+  .audioBlocks {
+    display: block;
+    margin: 30px 25px 0 25px;
+    &-main {
+      display: flex;
+      justify-content: space-between;
+      height: 65px;
+      padding: 0 15px;
+      margin-bottom: 15px;
+
+      &-symbol {
+        font-size: 40px;
+        margin-right: 15px;
+      }
+
+      &-name {
+        font-size: 9px;
+      }
+
+      &-description {
+        width: 250px;
+        font-size: 9px;
+      }
+
+      &-stick {
+        height: 50px;
+        width: 50px;
+      }
+
+      &-piano {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
 }
