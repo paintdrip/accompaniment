@@ -1,6 +1,7 @@
 .audioplayer {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 
   &-main {
     display: flex;
@@ -57,6 +58,7 @@
       align-items: center;
       height: 30px;
       width: 100vh;
+      margin: 0 30px;
     }
   }
 
@@ -98,9 +100,12 @@
   opacity: 1;
   color: transparent;
 
+  &:hover {
+    box-shadow: 0px 0px 3px 3px #bc00ff;
+    transition: 0.2s;
+  }
+
   &-dragging,
-  &:hover,
-  &:active,
   &:focus {
     border: none !important;
     border-color: none !important;
@@ -118,4 +123,22 @@
 .rc-slider-rail {
   height: 2px;
   background-color: white;
+}
+
+//временная заглушка
+.description {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-btn {
+    background: rgb(255, 0, 177);
+    background: linear-gradient(90deg, rgba(255, 0, 177, 1) 0%, rgba(49, 0, 255, 1) 100%);
+    padding: 20px 40px;
+    border-radius: 25px;
+    font-size: 32px;
+    color: white;
+  }
 }
