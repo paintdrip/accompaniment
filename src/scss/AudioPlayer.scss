@@ -17,6 +17,7 @@
       margin-top: 20px;
       display: flex;
       flex-direction: column;
+      align-items: center;
 
       &-logo {
         height: 250px;
@@ -25,11 +26,15 @@
       &-name {
         font-size: 16px;
         text-align: center;
+        max-width: 300px;
+        font-weight: 200;
       }
 
       &-composer {
+        margin-top: 10px;
         font-size: 16px;
         text-align: center;
+        font-weight: 500;
       }
     }
   }
@@ -38,14 +43,33 @@
 .slider {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
 
   &-switches {
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+    &-btn {
+      height: 40px;
+      &-main {
+        height: 70px;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+    }
   }
 
   &-temps {
+    margin-top: 25px;
     display: flex;
     flex-direction: row;
+
+    &-icon {
+      height: 27px;
+      margin: 0 30px;
+    }
   }
 }

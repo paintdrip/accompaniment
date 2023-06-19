@@ -34,15 +34,15 @@ export const AudioPlayer = () => {
             {/* слайдер */}
             {/* переключатели */}
             <div className="slider-switches">
-              <img src={left_button} alt="кнопка прокрутки влево" />
-              <img src={play_button} alt="кнопка запуска" />
-              <img src={looping_button} alt="кнопка зацикливания" />
+              <img src={left_button} alt="кнопка прокрутки влево" className="slider-switches-btn" />
+              <img src={play_button} alt="кнопка запуска" className="slider-switches-btn-main" />
+              <img src={looping_button} alt="кнопка зацикливания" className="slider-switches-btn" />
             </div>
             {/* выбор темпа */}
             <div className="slider-temps">
-              <img src={temp_100} alt="темп 100" />
-              <img src={temp_112} alt="темп 112" />
-              <img src={temp_120} alt="темп 120" />
+              <img src={temp_100} alt="темп 100" className="slider-temps-icon" />
+              <img src={temp_112} alt="темп 112" className="slider-temps-icon" />
+              <img src={temp_120} alt="темп 120" className="slider-temps-icon" />
             </div>
           </container>
         </div>
