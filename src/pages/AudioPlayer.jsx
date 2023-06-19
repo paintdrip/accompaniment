@@ -32,6 +32,11 @@ export const AudioPlayer = () => {
           {/* слайдер, кнопки и выбор темпа */}
           <container className="slider">
             {/* слайдер */}
+            <div className="slider-range">
+              <p>2:47</p>
+              <input type="range" />
+              <p>5:28</p>
+            </div>
             {/* переключатели */}
             <div className="slider-switches">
               <img src={left_button} alt="кнопка прокрутки влево" className="slider-switches-btn" />

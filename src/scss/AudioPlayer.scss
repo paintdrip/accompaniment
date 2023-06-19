@@ -47,10 +47,16 @@
   justify-content: center;
   margin-top: 25px;
 
+  &-range {
+    display: flex;
+    flex-direction: row;
+  }
+
   &-switches {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 25px;
 
     &-btn {
       height: 40px;
