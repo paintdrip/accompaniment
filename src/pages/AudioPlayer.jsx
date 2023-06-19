@@ -11,6 +11,9 @@ import temp_100 from '../images/pace/temp_100.svg';
 import temp_112 from '../images/pace/temp_112.svg';
 import temp_120 from '../images/pace/temp_120.svg';
 
+import Slider, { Range } from 'rc-slider';
+import 'rc-slider/assets/index.css';
+
 export const AudioPlayer = () => {
   return (
     <section className="audioplayer">
@@ -34,7 +37,7 @@ export const AudioPlayer = () => {
             {/* слайдер */}
             <div className="slider-range">
               <p>2:47</p>
-              <input type="range" />
+              <Slider className="slider-range-strip" />
               <p>5:28</p>
             </div>
             {/* переключатели */}
