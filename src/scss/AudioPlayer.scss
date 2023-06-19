@@ -1,0 +1,51 @@
+.audioplayer {
+  display: flex;
+  flex-direction: column;
+
+  &-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    &-logo {
+      height: 80px;
+    }
+
+    &-musiccard {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+
+      &-logo {
+        height: 250px;
+      }
+
+      &-name {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      &-composer {
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+
+  &-switches {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-temps {
+    display: flex;
+    flex-direction: row;
+  }
+}

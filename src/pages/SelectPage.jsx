@@ -2,7 +2,8 @@ import React from 'react';
 
 import { Header } from '../components/Header';
 
-import logo_accomp from '../images/LogoAccomp.png';
+import logo_accomp_full from '../images/LogoAccompFull.svg';
+
 import strunnie_instr from '../images/icons/strunnie.svg';
 import duhovie_instr from '../images/icons/duhovie.svg';
 import udarnie_instr from '../images/icons/udarnie.svg';
@@ -17,7 +18,7 @@ export const SelectPage = () => {
     <section className="selectPage">
       <Header />
       <div className="selectPage-main">
-        <img src={logo_accomp} alt="Аккомпанемент для всех" className="selectPage-main-logo" />
+        <img src={logo_accomp_full} alt="Аккомпанемент для всех" className="selectPage-main-logo" />
         <div className="selectPage-main-blocks">
           {/* струнные инструменты */}
           <img
