@@ -41,7 +41,7 @@
     // стилизация поля инпута с иконкой поиска
     &-entering {
       border: 1px solid #ffffff;
-      display: flex; //ПОФИКСИТЬ, СДЕЛАТЬ АДАПТИВНЫМ
+      display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0 20px;

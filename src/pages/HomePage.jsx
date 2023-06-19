@@ -1,7 +1,7 @@
 import React from 'react';
 
-import mainLogo from '../../images/mainLogo.png';
-import play from '../../images/play.png';
+import mainLogo from '../images/mainLogo.png';
+import play from '../images/play.svg';
 
 const HomePage = () => {
   return (

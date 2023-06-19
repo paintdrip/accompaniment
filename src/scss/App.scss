@@ -2,6 +2,7 @@
 @import './HomePage';
 @import './SelectPage';
 @import './SongsPage';
+@import './AudioPlayer';
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;700;900&display=swap');
 
@@ -13,17 +14,3 @@ body {
   background-color: black;
   color: white;
 }
-
-// .selectPage {
-//   display: flex;
-//   flex-direction: column;
-
-//   &-header {
-//     &-right {
-//       margin: 55px 55px 00px 00px;
-//       &-logo {
-//         height: 50px;
-//       }
-//     }
-//   }
-// }

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import cult_fond_logo from '../images/CultFond.svg';
+
 import user_profile_logo from '../images/UserProfile.svg';
 
 export const Header = () => {
