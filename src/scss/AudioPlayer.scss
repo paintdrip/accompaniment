@@ -236,7 +236,7 @@
   .slider {
     &-range {
       &-strip {
-        width: 660px;
+        width: 620px;
         margin: 0 25px;
       }
     }
@@ -270,6 +270,14 @@
       &-musiccard {
         margin-top: 20px;
         width: 100%;
+      }
+    }
+  }
+
+  .description {
+    &__image-block {
+      &__frame {
+        height: 235px;
       }
     }
   }
