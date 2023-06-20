@@ -40,9 +40,9 @@ export const AudioPlayer = () => {
             <container className="slider">
               {/* слайдер */}
               <div className="slider-range">
-                <p>2:47</p>
+                <p className="slider-range-timing">2:47</p>
                 <Slider className="slider-range-strip" />
-                <p>5:28</p>
+                <p className="slider-range-timing">5:28</p>
               </div>
               {/* переключатели */}
               <div className="slider-switches">

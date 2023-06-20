@@ -55,6 +55,9 @@
     align-items: center;
     width: 100%;
 
+    &-timing {
+    }
+
     &-strip {
       display: flex;
       align-items: center;
@@ -254,9 +257,31 @@
   .slider {
     width: 100%;
 
+    &-switches {
+      &-btn {
+        height: 30px;
+        &-main {
+          height: 60px;
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+      }
+    }
+
+    &-temps {
+      &-icon {
+        height: 20px;
+        margin: 0 12px;
+      }
+    }
+
     &-range {
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      &-timing {
+        font-size: 12px;
+      }
     }
   }
 
@@ -270,14 +295,27 @@
       &-musiccard {
         margin-top: 20px;
         width: 100%;
+
+        &-logo {
+          height: 250px;
+        }
+
+        &-name {
+          font-size: 12px;
+        }
+
+        &-composer {
+          font-size: 12px;
+        }
       }
     }
   }
 
   .description {
     &__image-block {
+      height: 150px;
       &__frame {
-        height: 235px;
+        height: 170px;
       }
     }
   }
