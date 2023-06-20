@@ -1,6 +1,7 @@
 import React from 'react';
 
 import cult_fond_logo from '../images/CultFond.svg';
+import blag_fond_logo from '../images/BlagFond.svg';
 
 import user_profile_logo from '../images/UserProfile.svg';
 
@@ -14,7 +15,7 @@ export const Header = () => {
           className="selectPage-header-left-logo"
         />
         <img
-          src={cult_fond_logo}
+          src={blag_fond_logo}
           alt="ПРИ ПОДДЕРЖКЕ ПРЕЗИДЕНТСКОГО ФОНДА КУЛЬТУРНЫХ ИНИЦИАТИВ"
           className="selectPage-header-left-logo"
         />

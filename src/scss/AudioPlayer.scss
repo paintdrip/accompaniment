@@ -206,4 +206,39 @@
 }
 
 @media (max-width: 1035px) {
+  .audioplayer {
+    &-main {
+      &-logo {
+        height: 50px;
+      }
+
+      &-musiccard {
+        margin-top: 0;
+
+        &-logo {
+          height: 200px;
+        }
+
+        &-name {
+          font-size: 14px;
+        }
+
+        &-composer {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .slider {
+    &-range {
+      &-strip {
+        width: 670px;
+        margin: 0 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 810px) {
 }
