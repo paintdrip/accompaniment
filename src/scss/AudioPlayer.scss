@@ -233,10 +233,17 @@
   .slider {
     &-range {
       &-strip {
-        width: 670px;
-        margin: 0 15px;
+        width: 660px;
+        margin: 0 25px;
       }
     }
+  }
+
+  .rc-slider-handle {
+    width: 32px;
+    height: 21px;
+    border-radius: 50%;
+    transform: rotate(-25deg) translateX(-50%) translateY(-25%) !important;
   }
 }
 
