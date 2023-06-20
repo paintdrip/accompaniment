@@ -1,7 +1,6 @@
 .audioplayer {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 
   &-main {
     display: flex;
@@ -57,7 +56,7 @@
       display: flex;
       align-items: center;
       height: 30px;
-      width: 100vh;
+      width: 850px;
       margin: 0 30px;
     }
   }
@@ -100,13 +99,9 @@
   opacity: 1;
   color: transparent;
 
-  &:hover {
-    box-shadow: 0px 0px 3px 3px #bc00ff;
-    transition: 0.2s;
-  }
-
   &-dragging,
-  &:focus {
+  &:focus,
+  &:hover {
     border: none !important;
     border-color: none !important;
     box-shadow: none !important;
@@ -127,18 +122,88 @@
 
 //временная заглушка
 .description {
-  height: 100vh;
+  margin-top: 200px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   &-btn {
     background: rgb(255, 0, 177);
     background: linear-gradient(90deg, rgba(255, 0, 177, 1) 0%, rgba(49, 0, 255, 1) 100%);
-    padding: 20px 40px;
-    border-radius: 25px;
-    font-size: 32px;
+    border: none;
+    border-radius: 30px;
     color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
   }
+
+  &__card {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 350px;
+
+    &__icon {
+      height: 120px;
+    }
+
+    &__title {
+      font-weight: 500;
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    &__synopsis {
+      font-weight: 100;
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+
+  &__image-block {
+    position: relative;
+    height: 320px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__frame {
+      position: absolute;
+      margin-right: 1000px;
+      height: 353px;
+    }
+  }
+
+  &__text-block {
+    max-width: 700px;
+    &__title {
+      font-size: 21px;
+    }
+    &__synopsis {
+      font-size: 12px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 1620px) {
+  .description {
+    &__image-block {
+      margin-top: 40px;
+      margin-bottom: 70px;
+      &__frame {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1035px) {
 }
