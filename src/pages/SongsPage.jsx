@@ -1,7 +1,8 @@
 import React from 'react';
 
+import { Header } from '../components/Header/Header';
+
 import nota_logo from '../images/nota_logo.svg';
-import { Header } from '../components/Header';
 import search_icon from '../images/search_icon.svg';
 import stick from '../images/stick.svg';
 import piano_logo from '../images/piano_logo.svg';

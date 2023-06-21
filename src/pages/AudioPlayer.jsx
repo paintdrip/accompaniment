@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Header } from '../components/Header';
+import { Header } from '../components/Header/Header';
 
 import logo_accomp_full from '../images/LogoAccompFull.svg';
 import musiccard_logo from '../images/musiccard_logo.svg';
@@ -18,13 +18,11 @@ import 'rc-slider/assets/index.css';
 
 export const AudioPlayer = () => {
   return (
-    <>
+    <div className="wrapper">
       {/* Верхний блок */}
       <section className="audioplayer">
         <Header />
         <div className="audioplayer__main">
-          {/* основной логотип */}
-          <img src={logo_accomp_full} alt="логотип сайта" className="audioplayer__main__logo" />
           {/* карточка для аккомпанемента */}
           <div className="audioplayer__main__music-card">
             <img
@@ -116,6 +114,6 @@ export const AudioPlayer = () => {
           </p>
         </div>
       </section>
-    </>
+    </div>
   );
 };
