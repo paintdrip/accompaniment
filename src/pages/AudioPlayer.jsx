@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Header } from '../components/Header';
 
@@ -22,56 +22,59 @@ export const AudioPlayer = () => {
       {/* Верхний блок */}
       <section className="audioplayer">
         <Header />
-        <div className="audioplayer-main">
+        <div className="audioplayer__main">
           {/* основной логотип */}
-          <img src={logo_accomp_full} alt="логотип сайта" className="audioplayer-main-logo" />
+          <img src={logo_accomp_full} alt="логотип сайта" className="audioplayer__main__logo" />
           {/* карточка для аккомпанемента */}
-          <div className="audioplayer-main-musiccard">
+          <div className="audioplayer__main__music-card">
             <img
               src={musiccard_logo}
               alt="карточка аккомпанемента"
-              className="audioplayer-main-musiccard-logo"
+              className="audioplayer__main__music-card__logo"
             />
-            <b className="audioplayer-main-musiccard-name">
+            <b className="audioplayer__main__music-card__name">
               Концерт № 1 для скрипки и струнных (ля минор) BWV 1041
             </b>
-            <b className="audioplayer-main-musiccard-composer">Иоганн Себастьян Бах</b>
+            <b className="audioplayer__main__music-card__composer">Иоганн Себастьян Бах</b>
             {/* слайдер, кнопки и выбор темпа */}
             <container className="slider">
               {/* слайдер */}
-              <div className="slider-range">
-                <p className="slider-range-timing">2:47</p>
-                <Slider className="slider-range-strip" />
-                <p className="slider-range-timing">5:28</p>
+              <div className="slider__range">
+                <p className="slider__range__timing">2:47</p>
+                <Slider className="slider__range__strip" />
+                <p className="slider__range__timing">5:28</p>
               </div>
               {/* переключатели */}
-              <div className="slider-switches">
+              <div className="slider__switches">
                 <img
                   src={left_button}
                   alt="кнопка прокрутки влево"
-                  className="slider-switches-btn"
+                  className="slider__switches__btn"
                 />
-                <img src={play_button} alt="кнопка запуска" className="slider-switches-btn-main" />
+                <img
+                  src={play_button}
+                  alt="кнопка запуска"
+                  className="slider__switches__btn__main"
+                />
                 <img
                   src={looping_button}
                   alt="кнопка зацикливания"
-                  className="slider-switches-btn"
+                  className="slider__switches__btn"
                 />
               </div>
               {/* выбор темпа */}
-              <div className="slider-temps">
-                <img src={temp_100} alt="темп 100" className="slider-temps-icon" />
-                <img src={temp_112} alt="темп 112" className="slider-temps-icon" />
-                <img src={temp_120} alt="темп 120" className="slider-temps-icon" />
+              <div className="slider__temps">
+                <img src={temp_100} alt="темп 100" className="slider__temps__icon" />
+                <img src={temp_112} alt="темп 112" className="slider__temps__icon" />
+                <img src={temp_120} alt="темп 120" className="slider__temps__icon" />
               </div>
             </container>
           </div>
         </div>
       </section>
-
       {/* Нижний блок */}
       <section className="description">
-        <button className="description-btn">▶ СКАЧАТЬ НОТЫ</button>
+        <button className="description__btn">▶ СКАЧАТЬ НОТЫ</button>
         {/* иконка */}
         <div className="description__card">
           <img src={nota_second_logo} alt="нота (логотип)" className="description__card__icon" />

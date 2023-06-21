@@ -2,36 +2,36 @@
   display: flex;
   flex-direction: column;
 
-  &-main {
+  &__main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     // width: 100%;
 
-    &-logo {
+    &__logo {
       height: 80px;
     }
 
-    &-musiccard {
+    &__music-card {
       margin-top: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
       // width: 100%;
 
-      &-logo {
+      &__logo {
         height: 250px;
       }
 
-      &-name {
+      &__name {
         font-size: 16px;
         text-align: center;
         max-width: 300px;
         font-weight: 200;
       }
 
-      &-composer {
+      &__composer {
         margin-top: 10px;
         font-size: 16px;
         text-align: center;
@@ -49,16 +49,16 @@
   margin-top: 25px;
   // width: 100%;
 
-  &-range {
+  &__range {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
 
-    &-timing {
+    &__timing {
     }
 
-    &-strip {
+    &__strip {
       display: flex;
       align-items: center;
       height: 30px;
@@ -67,15 +67,15 @@
     }
   }
 
-  &-switches {
+  &__switches {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 25px;
 
-    &-btn {
+    &__btn {
       height: 40px;
-      &-main {
+      &__main {
         height: 70px;
         margin-left: 40px;
         margin-right: 40px;
@@ -83,12 +83,12 @@
     }
   }
 
-  &-temps {
+  &__temps {
     margin-top: 25px;
     display: flex;
     flex-direction: row;
 
-    &-icon {
+    &__icon {
       height: 27px;
       margin: 0 30px;
     }
@@ -135,7 +135,7 @@
   justify-content: center;
   flex-direction: column;
 
-  &-btn {
+  &__btn {
     background: rgb(255, 0, 177);
     background: linear-gradient(90deg, rgba(255, 0, 177, 1) 0%, rgba(49, 0, 255, 1) 100%);
     border: none;
@@ -213,23 +213,23 @@
 
 @media (max-width: 1035px) {
   .audioplayer {
-    &-main {
-      &-logo {
+    &__main {
+      &__logo {
         height: 50px;
       }
 
-      &-musiccard {
+      &__music-card {
         margin-top: 0;
 
-        &-logo {
+        &__logo {
           height: 200px;
         }
 
-        &-name {
+        &__name {
           font-size: 14px;
         }
 
-        &-composer {
+        &__composer {
           font-size: 14px;
         }
       }
@@ -237,8 +237,8 @@
   }
 
   .slider {
-    &-range {
-      &-strip {
+    &__range {
+      &__strip {
         width: 620px;
         margin: 0 25px;
       }
@@ -257,10 +257,10 @@
   .slider {
     width: 100%;
 
-    &-switches {
-      &-btn {
+    &__switches {
+      &__btn {
         height: 30px;
-        &-main {
+        &__main {
           height: 60px;
           margin-left: 40px;
           margin-right: 40px;
@@ -268,43 +268,44 @@
       }
     }
 
-    &-temps {
-      &-icon {
+    &__temps {
+      &__icon {
         height: 20px;
         margin: 0 12px;
       }
     }
 
-    &-range {
+    &__range {
       padding-left: 15px;
+      justify-content: center;
       padding-right: 15px;
 
-      &-timing {
+      &__timing {
         font-size: 12px;
       }
     }
   }
 
   .audioplayer {
-    &-main {
+    &__main {
       width: 100%;
 
-      &-logo {
+      &__logo {
         display: none;
       }
-      &-musiccard {
+      &__music-card {
         margin-top: 20px;
         width: 100%;
 
-        &-logo {
+        &__logo {
           height: 250px;
         }
 
-        &-name {
+        &__name {
           font-size: 12px;
         }
 
-        &-composer {
+        &__composer {
           font-size: 12px;
         }
       }
@@ -317,6 +318,9 @@
       &__frame {
         height: 170px;
       }
+    }
+
+    &__text-block {
     }
   }
 }
