@@ -74,8 +74,8 @@ export const AudioPlayer = () => {
       </section>
       {/* Нижний блок */}
       <section className="description">
-        <button className="description__btn">▶ СКАЧАТЬ НОТЫ</button>
         {/* иконка */}
+        <button className="description__btn">▶ СКАЧАТЬ НОТЫ</button>
         <div className="description__card">
           <img src={nota_second_logo} alt="нота (логотип)" className="description__card__icon" />
           <h3 className="description__card__title">«Христоматия для скрипки» И.И. Иванова</h3>
@@ -83,6 +83,7 @@ export const AudioPlayer = () => {
             Иоганн Себастьян Бах - Концерт № 1 для скрипки и струнных (ля минор) BWV 1041
           </p>
         </div>
+
         <div className="description__image-block">
           {/* изображение композитора */}
           <img src={imageframe} alt="Фон изображения" className="description__image-block__frame" />
