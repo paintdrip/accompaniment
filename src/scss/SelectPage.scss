@@ -21,10 +21,16 @@ body {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       gap: 20px;
+      opacity: 0.8;
 
       &__logo {
         height: 180px;
         cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          opacity: 1;
+          transform: scale(1.05);
+        }
       }
     }
   }
