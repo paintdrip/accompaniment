@@ -115,6 +115,7 @@ body {
     height: 100px;
     padding: 0 30px;
     margin-bottom: 20px;
+    cursor: pointer;
 
     &__symbol {
       color: #000000;
@@ -156,6 +157,7 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  cursor: pointer;
 
   &__main {
     background-color: #ffffff;
@@ -167,6 +169,7 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
   }
 }
 

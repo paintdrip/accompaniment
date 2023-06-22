@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import Header from '../components/Header/Header';
 
 import nota_logo from '../images/nota_logo.svg';
@@ -58,62 +60,68 @@ const SongsPage = () => {
           </div>
           {/* секция с аудиотреками */}
           <section className="audioBlocks">
-            <div className="audioBlocks__main">
-              <p className="audioBlocks__main__symbol">▶</p>
-              <p className="audioBlocks__main__name">
-                Бах
-                <br />
-                Иоганн
-                <br />
-                Себастьян
-              </p>
-              <img src={stick} alt="Разделительный контур" className="audioBlocks__main__stick" />
-              <p className="audioBlocks__main__description">
-                Концерт № 1 для скрипки и струнных (ля минор)
-                <br />
-                BWV 1041
-              </p>
-              <img src={stick} alt="Разделительный контур" className="audioBlocks__main__stick" />
-              <img src={piano_logo} alt="Иконка пианино" className="audioBlocks__main__piano" />
-            </div>
+            <Link to="/audio-player" style={{ textDecoration: 'none' }}>
+              <div className="audioBlocks__main">
+                <p className="audioBlocks__main__symbol">▶</p>
+                <p className="audioBlocks__main__name">
+                  Бах
+                  <br />
+                  Иоганн
+                  <br />
+                  Себастьян
+                </p>
+                <img src={stick} alt="Разделительный контур" className="audioBlocks__main__stick" />
+                <p className="audioBlocks__main__description">
+                  Концерт № 1 для скрипки и струнных (ля минор)
+                  <br />
+                  BWV 1041
+                </p>
+                <img src={stick} alt="Разделительный контур" className="audioBlocks__main__stick" />
+                <img src={piano_logo} alt="Иконка пианино" className="audioBlocks__main__piano" />
+              </div>
+            </Link>
 
-            <div className="audioBlocks__main">
-              <p className="audioBlocks__main__symbol">▶</p>
-              <p className="audioBlocks__main__name">
-                Бах
-                <br />
-                Иоганн
-                <br />
-                Себастьян
-              </p>
-              <img src={stick} alt="Разделительный контур" className="audioBlocks__main__stick" />
-              <p className="audioBlocks__main__description">
-                Концерт № 1 для скрипки и струнных (ля минор)
-                <br />
-                BWV 1041
-              </p>
-              <img src={stick} alt="Разделительный контур" className="audioBlocks__main__stick" />
-              <img src={piano_logo} alt="Иконка пианино" className="audioBlocks__main__piano" />
-            </div>
+            <Link to="/audio-player" style={{ textDecoration: 'none' }}>
+              <div className="audioBlocks__main">
+                <p className="audioBlocks__main__symbol">▶</p>
+                <p className="audioBlocks__main__name">
+                  Бах
+                  <br />
+                  Иоганн
+                  <br />
+                  Себастьян
+                </p>
+                <img src={stick} alt="Разделительный контур" className="audioBlocks__main__stick" />
+                <p className="audioBlocks__main__description">
+                  Концерт № 1 для скрипки и струнных (ля минор)
+                  <br />
+                  BWV 1041
+                </p>
+                <img src={stick} alt="Разделительный контур" className="audioBlocks__main__stick" />
+                <img src={piano_logo} alt="Иконка пианино" className="audioBlocks__main__piano" />
+              </div>
+            </Link>
 
-            <div className="audioBlocks__main">
-              <p className="audioBlocks__main__symbol">▶</p>
-              <p className="audioBlocks__main__name">
-                Бах
-                <br />
-                Иоганн
-                <br />
-                Себастьян
-              </p>
-              <img src={stick} alt="Разделительный контур" className="audioBlocks__main__stick" />
-              <p className="audioBlocks__main__description">
-                Концерт № 1 для скрипки и струнных (ля минор)
-                <br />
-                BWV 1041
-              </p>
-              <img src={stick} alt="Разделительный контур" className="audioBlocks__main__stick" />
-              <img src={piano_logo} alt="Иконка пианино" className="audioBlocks__main__piano" />
-            </div>
+            <Link to="/audio-player" style={{ textDecoration: 'none' }}>
+              <div className="audioBlocks__main">
+                <p className="audioBlocks__main__symbol">▶</p>
+                <p className="audioBlocks__main__name">
+                  Бах
+                  <br />
+                  Иоганн
+                  <br />
+                  Себастьян
+                </p>
+                <img src={stick} alt="Разделительный контур" className="audioBlocks__main__stick" />
+                <p className="audioBlocks__main__description">
+                  Концерт № 1 для скрипки и струнных (ля минор)
+                  <br />
+                  BWV 1041
+                </p>
+                <img src={stick} alt="Разделительный контур" className="audioBlocks__main__stick" />
+                <img src={piano_logo} alt="Иконка пианино" className="audioBlocks__main__piano" />
+              </div>
+            </Link>
           </section>
         </div>
       </section>

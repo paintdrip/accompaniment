@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import Header from '../components/Header/Header';
 
 import logo_accomp_full from '../images/LogoAccompFull.svg';
@@ -21,53 +23,76 @@ const SelectPage = () => {
         <div className="selectPage__main">
           <div className="selectPage__main__blocks">
             {/* струнные инструменты */}
-            <img
-              src={strunnie_instr}
-              alt="Аккомпанемент для всех"
-              className="selectPage__main__blocks__logo"
-            />
+            <Link to="/songs-page">
+              <img
+                src={strunnie_instr}
+                alt="Аккомпанемент для всех"
+                className="selectPage__main__blocks__logo"
+              />
+            </Link>
+
             {/* духовые инструменты */}
-            <img
-              src={duhovie_instr}
-              alt="Аккомпанемент для всех"
-              className="selectPage__main__blocks__logo"
-            />
+            <Link to="/songs-page">
+              <img
+                src={duhovie_instr}
+                alt="Аккомпанемент для всех"
+                className="selectPage__main__blocks__logo"
+              />
+            </Link>
+
             {/* ударные инструменты */}
-            <img
-              src={udarnie_instr}
-              alt="Аккомпанемент для всех"
-              className="selectPage__main__blocks__logo"
-            />
+            <Link to="/songs-page">
+              <img
+                src={udarnie_instr}
+                alt="Аккомпанемент для всех"
+                className="selectPage__main__blocks__logo"
+              />
+            </Link>
+
             {/* народные инструменты */}
-            <img
-              src={narodnie_instr}
-              alt="Аккомпанемент для всех"
-              className="selectPage__main__blocks__logo"
-            />
+            <Link to="/songs-page">
+              <img
+                src={narodnie_instr}
+                alt="Аккомпанемент для всех"
+                className="selectPage__main__blocks__logo"
+              />
+            </Link>
+
             {/* фольклорные инструменты */}
-            <img
-              src={folqlernie_instr}
-              alt="Аккомпанемент для всех"
-              className="selectPage__main__blocks__logo"
-            />
+            <Link to="/songs-page">
+              <img
+                src={folqlernie_instr}
+                alt="Аккомпанемент для всех"
+                className="selectPage__main__blocks__logo"
+              />
+            </Link>
+
             {/* народный вокал */}
-            <img
-              src={narodniy_vocal}
-              alt="Аккомпанемент для всех"
-              className="selectPage__main__blocks__logo"
-            />
+            <Link to="/songs-page">
+              <img
+                src={narodniy_vocal}
+                alt="Аккомпанемент для всех"
+                className="selectPage__main__blocks__logo"
+              />
+            </Link>
+
             {/* академический вокал */}
-            <img
-              src={academ_vocal}
-              alt="Аккомпанемент для всех"
-              className="selectPage__main__blocks__logo"
-            />
+            <Link to="/songs-page">
+              <img
+                src={academ_vocal}
+                alt="Аккомпанемент для всех"
+                className="selectPage__main__blocks__logo"
+              />
+            </Link>
+
             {/* эстрадное направление */}
-            <img
-              src={estradnoe}
-              alt="Аккомпанемент для всех"
-              className="selectPage__main__blocks__logo"
-            />
+            <Link to="/songs-page">
+              <img
+                src={estradnoe}
+                alt="Аккомпанемент для всех"
+                className="selectPage__main__blocks__logo"
+              />
+            </Link>
           </div>
         </div>
       </section>

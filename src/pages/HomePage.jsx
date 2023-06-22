@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import mainLogo from '../images/mainLogo.png';
 import play from '../images/play.svg';
 
@@ -21,7 +23,10 @@ const HomePage = () => {
           ЗДЕСЬ ГОТОВЯТСЯ СОЛИСТЫ <br />
           ДЛЯ БОЛЬШОЙ СЦЕНЫ
         </h4>
-        <img src={play} alt="иконка play" className="welcomePage__description__img" />
+
+        <Link to="/select-page">
+          <img src={play} alt="иконка play" className="welcomePage__description__img" />
+        </Link>
       </div>
     </section>
   );

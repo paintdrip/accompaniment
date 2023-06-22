@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 // import cult_fond_logo from '../../images/CultFond.svg';
 // import blag_fond_logo from '../../images/BlagFond.svg';
 
@@ -11,11 +13,13 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header__center}>
-        <img
-          src={logo_accomp_full}
-          alt="Основной логотип"
-          className={styles.header__center__logo}
-        />
+        <Link to="/select-page">
+          <img
+            src={logo_accomp_full}
+            alt="Основной логотип"
+            className={styles.header__center__logo}
+          />
+        </Link>
       </div>
       <div className={styles.header__right}>
         <img
