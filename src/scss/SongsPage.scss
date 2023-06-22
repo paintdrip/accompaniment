@@ -1,28 +1,42 @@
+html,
+body {
+  height: 100%;
+}
+
 .songsPage {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 
-  &-main {
-    &-titleblock {
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 2 1 auto;
+    justify-content: center;
+    width: 100%;
+    margin: 0px auto;
+
+    &__title-block {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: end;
-      &-logo {
+      &__logo {
         height: 80px;
         margin-right: 15px;
       }
-      &-text {
+      &__text {
         font-size: 30px;
         font-weight: 600;
       }
     }
 
-    &-buttons {
+    &__buttons {
       display: grid;
       justify-content: center;
 
-      &-up {
+      &__up {
         display: grid;
         justify-content: center;
         grid-template-columns: 320px 320px;
@@ -31,7 +45,7 @@
         margin-top: 50px;
       }
 
-      &-down {
+      &__down {
         display: grid;
         grid-template-columns: 320px 320px 320px 320px;
         gap: 25px;
@@ -39,7 +53,7 @@
     }
 
     // стилизация поля инпута с иконкой поиска
-    &-entering {
+    &__entering {
       border: 1px solid #ffffff;
       display: flex;
       justify-content: space-between;
@@ -52,7 +66,7 @@
       overflow: hidden;
       background-color: transparent;
 
-      &-input {
+      &__input {
         border: none;
         background-color: transparent;
         color: #ffffff;
@@ -62,12 +76,12 @@
         padding-right: 10px;
       }
 
-      &-btn {
+      &__btn {
         border: none;
         background-color: transparent;
       }
 
-      &-image {
+      &__image {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -92,7 +106,7 @@
   flex-direction: column;
   margin-top: 40px;
 
-  &-main {
+  &__main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,29 +116,29 @@
     padding: 0 30px;
     margin-bottom: 20px;
 
-    &-symbol {
+    &__symbol {
       color: #000000;
       font-size: 50px;
       margin-right: 50px;
     }
 
-    &-name {
+    &__name {
       color: #000000;
       font-size: 16px;
     }
 
-    &-description {
+    &__description {
       color: #000000;
       margin-right: 365px;
       font-size: 16px;
     }
 
-    &-stick {
+    &__stick {
       height: 80px;
       width: 80px;
     }
 
-    &-piano {
+    &__piano {
       height: 50px;
       width: 50px;
     }
@@ -143,7 +157,7 @@
   display: inline-block;
   font-size: 16px;
 
-  &-main {
+  &__main {
     background-color: #ffffff;
     border: 1px seashell solid;
     border-radius: 30px;
@@ -164,9 +178,9 @@
 
 @media (max-width: 1620px) {
   .songsPage {
-    &-main {
-      &-buttons {
-        &-up {
+    &__main {
+      &__buttons {
+        &__up {
           display: grid;
           justify-content: center;
           grid-template-columns: 230px 230px;
@@ -175,14 +189,14 @@
           margin-top: 50px;
         }
 
-        &-down {
+        &__down {
           display: grid;
           grid-template-columns: 230px 230px 230px 230px;
           gap: 25px;
         }
       }
 
-      &-entering {
+      &__entering {
         width: 995px;
       }
     }
@@ -192,15 +206,15 @@
     padding: 10px 21px;
     font-size: 12px;
 
-    &-main {
+    &__main {
       padding: 10px 21px;
       font-size: 12px;
     }
   }
 
   .audioBlocks {
-    &-main {
-      &-description {
+    &__main {
+      &__description {
         margin-right: 10px;
       }
     }
@@ -208,11 +222,10 @@
 }
 
 @media (max-width: 1035px) {
-  //тут редачу
   .songsPage {
-    &-main {
-      &-buttons {
-        &-up {
+    &__main {
+      &__buttons {
+        &__up {
           display: grid;
           justify-content: center;
           grid-template-columns: 230px 230px;
@@ -221,14 +234,14 @@
           margin-top: 50px;
         }
 
-        &-down {
+        &__down {
           display: grid;
           grid-template-columns: 153px 153px 153px 153px;
           gap: 25px;
         }
       }
 
-      &-entering {
+      &__entering {
         width: 687px;
       }
     }
@@ -238,38 +251,38 @@
     padding: 10px 21px;
     font-size: 12px;
 
-    &-main {
+    &__main {
       padding: 10px 21px;
       font-size: 12px;
     }
   }
 
   .audioBlocks {
-    &-main {
+    &__main {
       height: 80px;
       padding: 0 30px;
       margin-bottom: 20px;
 
-      &-symbol {
+      &__symbol {
         font-size: 40px;
         margin-right: 25px;
       }
 
-      &-name {
+      &__name {
         font-size: 14px;
       }
 
-      &-description {
+      &__description {
         width: 250px;
         font-size: 14px;
       }
 
-      &-stick {
+      &__stick {
         height: 65px;
         width: 65px;
       }
 
-      &-piano {
+      &__piano {
         height: 40px;
         width: 40px;
       }
@@ -279,23 +292,24 @@
 
 @media (max-width: 810px) {
   .songsPage {
-    &-main {
-      &-titleblock {
-        &-logo {
+    &__main {
+      display: block;
+      &__title-block {
+        &__logo {
           height: 70px;
           margin-right: 15px;
         }
-        &-text {
+        &__text {
           font-size: 24px;
           font-weight: 600;
         }
       }
 
-      &-buttons {
+      &__buttons {
         justify-content: normal;
         margin: 0 25px;
 
-        &-up {
+        &__up {
           display: grid;
           justify-content: center;
           grid-template-columns: repeat(2, 1fr);
@@ -304,28 +318,28 @@
           margin-top: 50px;
         }
 
-        &-down {
+        &__down {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           gap: 12px 25px;
         }
       }
 
-      &-entering {
+      &__entering {
         margin: 30px 25px 0 25px;
         height: 34px;
         width: auto;
 
-        &-input {
+        &__input {
           font-size: 10px;
         }
 
-        &-btn {
+        &__btn {
           border: none;
           background-color: transparent;
         }
 
-        &-image {
+        &__image {
           height: 15px;
         }
       }
@@ -336,7 +350,7 @@
     padding: 10px 21px;
     font-size: 10px;
 
-    &-main {
+    &__main {
       padding: 10px 21px;
       font-size: 10px;
     }
@@ -349,33 +363,33 @@
   .audioBlocks {
     display: block;
     margin: 30px 25px 0 25px;
-    &-main {
+    &__main {
       display: flex;
       justify-content: space-between;
       height: 65px;
       padding: 0 15px;
       margin-bottom: 15px;
 
-      &-symbol {
+      &__symbol {
         font-size: 40px;
         margin-right: 15px;
       }
 
-      &-name {
+      &__name {
         font-size: 9px;
       }
 
-      &-description {
+      &__description {
         width: 250px;
         font-size: 9px;
       }
 
-      &-stick {
+      &__stick {
         height: 50px;
         width: 50px;
       }
 
-      &-piano {
+      &__piano {
         height: 30px;
         width: 30px;
       }

@@ -6,34 +6,34 @@
   height: 100vh;
   width: 100%;
 
-  &-header {
+  &__header {
     display: flex;
     flex-direction: column;
     // max-width: 580px;
-    &-img {
+    &__img {
       width: 450px;
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
-    &-title {
+    &__title {
       display: flex;
       justify-content: center;
       margin-top: 70px;
       font-weight: 500;
     }
-    &-subtitle {
+    &__subtitle {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
 
-      &-text {
+      &__text {
         margin-left: 10px;
         font-weight: 500;
         margin-right: 13px;
       }
 
-      &-img {
+      &__img {
         display: flex;
         align-self: center;
         width: 15px;
@@ -42,35 +42,36 @@
     }
   }
 
-  &-description {
-    &-text {
+  &__description {
+    &__text {
       margin-top: 50px;
       text-align: center;
       font-weight: 200;
     }
 
-    &-img {
+    &__img {
       margin-top: 50px;
       display: block;
       margin-left: auto;
       margin-right: auto;
       width: 50px;
       height: 50px;
+      cursor: pointer;
     }
   }
 }
 
 @media (max-width: 625px) {
   .welcomePage {
-    &-header {
-      &-title {
+    &__header {
+      &__title {
         font-size: 35px;
-        margin-right: 13px;
+        margin: 3px 13px;
       }
-      &-subtitle {
+      &__subtitle {
         font-size: 15px;
         padding-right: 15px;
-        &-text {
+        &__text {
           margin-left: 5px;
           font-weight: 500;
           font-size: 12px;
@@ -79,8 +80,8 @@
       }
     }
 
-    &-description {
-      &-text {
+    &__description {
+      &__text {
         font-size: 12px;
       }
     }
@@ -89,20 +90,20 @@
 
 @media (max-width: 460px) {
   .welcomePage {
-    &-header {
-      &-title {
+    &__header {
+      &__title {
         font-size: 28px;
       }
-      &-img {
+      &__img {
         width: 300px;
         display: block;
         margin-left: auto;
         margin-right: auto;
       }
-      &-subtitle {
+      &__subtitle {
         font-size: 11px;
         padding-right: 0;
-        &-text {
+        &__text {
           margin-left: 5px;
           font-weight: 500;
           font-size: 12px;
@@ -111,8 +112,8 @@
       }
     }
 
-    &-description {
-      &-text {
+    &__description {
+      &__text {
         font-size: 12px;
       }
     }

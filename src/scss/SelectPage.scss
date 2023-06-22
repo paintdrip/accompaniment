@@ -1,23 +1,30 @@
+html,
+body {
+  height: 100%;
+}
+
 .selectPage {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 
-  &-main {
+  &__main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 2 1 auto;
     justify-content: center;
     width: 100%;
-    margin-top: 80px;
+    margin: 0px auto;
 
-    &-blocks {
-      margin-top: 180px;
+    &__blocks {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       gap: 20px;
 
-      &-logo {
+      &__logo {
         height: 180px;
+        cursor: pointer;
       }
     }
   }
@@ -25,13 +32,13 @@
 
 @media (max-width: 1620px) {
   .selectPage {
-    &-main {
+    &__main {
       margin-top: 0;
-      &-blocks {
+      &__blocks {
         margin-top: 90px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 20px;
-        &-logo {
+        &__logo {
           height: 150px;
         }
       }
@@ -41,8 +48,8 @@
 
 @media (max-width: 810px) {
   .selectPage {
-    &-main {
-      &-blocks {
+    &__main {
+      &__blocks {
         margin-top: 30px;
         grid-template-columns: 1fr 1fr;
         gap: 20px;

@@ -7,7 +7,7 @@ import user_profile_logo from '../../images/UserProfile.svg';
 import logo_accomp_full from '../../images/LogoAccompFull.svg';
 import styles from './Header.module.scss';
 
-export const Header = () => {
+const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header__center}>
@@ -27,3 +27,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;

@@ -7,21 +7,21 @@ const HomePage = () => {
   return (
     <section className="welcomePage">
       {/* Верхний блок */}
-      <div className="welcomePage-header">
-        <img src={mainLogo} alt="логотип сайта" className="welcomePage-header-img" />
-        <h1 className="welcomePage-header-title">АККОМПАНЕМЕНТ</h1>
-        <div className="welcomePage-header-subtitle">
-          <img src={play} alt="иконка play" className="welcomePage-header-subtitle-img" />
-          <p className="welcomePage-header-subtitle-text">ДЛЯ ВСЕХ</p>
+      <div className="welcomePage__header">
+        <img src={mainLogo} alt="логотип сайта" className="welcomePage__header__img" />
+        <h1 className="welcomePage__header__title">АККОМПАНЕМЕНТ</h1>
+        <div className="welcomePage__header__subtitle">
+          <img src={play} alt="иконка play" className="welcomePage__header__subtitle__img" />
+          <p className="welcomePage__header__subtitle__text">ДЛЯ ВСЕХ</p>
         </div>
       </div>
       {/* Нижний блок */}
-      <div className="welcomePage-description">
-        <h4 className="welcomePage-description-text">
+      <div className="welcomePage__description">
+        <h4 className="welcomePage__description__text">
           ЗДЕСЬ ГОТОВЯТСЯ СОЛИСТЫ <br />
           ДЛЯ БОЛЬШОЙ СЦЕНЫ
         </h4>
-        <img src={play} alt="иконка play" className="welcomePage-description-img" />
+        <img src={play} alt="иконка play" className="welcomePage__description__img" />
       </div>
     </section>
   );

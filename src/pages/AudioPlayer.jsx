@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Header } from '../components/Header/Header';
+import Header from '../components/Header/Header';
 
 import logo_accomp_full from '../images/LogoAccompFull.svg';
 import musiccard_logo from '../images/musiccard_logo.svg';
@@ -16,7 +16,7 @@ import imageframe from '../images/imageframe.svg';
 import Slider, { Range } from 'rc-slider';
 import 'rc-slider/assets/index.css';
 
-export const AudioPlayer = () => {
+const AudioPlayer = () => {
   return (
     <div className="wrapper">
       {/* Верхний блок */}
@@ -117,3 +117,5 @@ export const AudioPlayer = () => {
     </div>
   );
 };
+
+export default AudioPlayer;
