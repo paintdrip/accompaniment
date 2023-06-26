@@ -4,10 +4,9 @@ import AudioPlayer from './pages/AudioPlayer';
 import HomePage from './pages/HomePage';
 import SelectPage from './pages/SelectPage';
 import SongsPage from './pages/SongsPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 import './scss/App.scss';
-
-// import HomePage from './components/HomePage';
 
 function App() {
   return (
@@ -20,7 +19,7 @@ function App() {
         <Route path="/audio-player" element={<AudioPlayer />} />
 
         {/* отработка ошибок */}
-        {/* <Route path="*" element={<NotFoundPage />} /> */}
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </>
   );

@@ -1,8 +1,10 @@
 @import './StandartReset';
-@import './HomePage';
-@import './SelectPage';
-@import './SongsPage';
-@import './AudioPlayer';
+
+// Стили для страниц
+@import './pages/HomePage';
+@import './pages/SelectPage';
+@import './pages/SongsPage';
+@import './pages/AudioPlayer';
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;700;900&display=swap');
 
