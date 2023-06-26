@@ -62,3 +62,17 @@ body {
     }
   }
 }
+
+// адаптив под 4к
+@media (min-width: 3830px) {
+  .selectPage {
+    &__main {
+      &__blocks {
+        gap: 40px;
+        &__logo {
+          height: 360px;
+        }
+      }
+    }
+  }
+}
