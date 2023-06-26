@@ -354,3 +354,103 @@ body {
     }
   }
 }
+
+// адаптив под 4к
+@media (min-width: 3830px) {
+  .audioplayer {
+    &__main {
+      &__music-card {
+        &__logo {
+          height: 500px;
+        }
+        &__name {
+          font-size: 32px;
+          max-width: 600px;
+        }
+        &__composer {
+          margin-top: 20px;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+
+  .slider {
+    margin-top: 50px;
+    &__range {
+      &__strip {
+        height: 60px;
+        width: 1700px;
+        margin: 0 60px;
+      }
+    }
+    &__switches {
+      margin-top: 50px;
+      &__btn {
+        height: 80px;
+        &__main {
+          height: 140px;
+          margin-left: 80px;
+          margin-right: 80px;
+        }
+      }
+    }
+    &__temps {
+      margin-top: 50px;
+      &__icon {
+        height: 54px;
+        margin: 0 60px;
+      }
+    }
+  }
+
+  //временная заглушка
+  .description {
+    margin-top: 20px;
+    &__btn {
+      border-radius: 60px;
+      padding: 20px 150px;
+      font-size: 32px;
+    }
+
+    &__card {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      max-width: 700px;
+
+      &__icon {
+        height: 240px;
+      }
+
+      &__title {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      &__synopsis {
+        font-size: 36px;
+      }
+    }
+
+    &__image-block {
+      height: 640px;
+      &__frame {
+        margin-right: 2000px;
+        height: 706px;
+      }
+    }
+
+    &__text-block {
+      max-width: 1400px;
+      margin-bottom: 50px;
+      &__title {
+        font-size: 42px;
+        margin-bottom: 40px;
+      }
+      &__synopsis {
+        font-size: 24px;
+        line-height: 2;
+      }
+    }
+  }
+}
