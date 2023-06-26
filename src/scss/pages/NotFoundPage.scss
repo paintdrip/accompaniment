@@ -19,6 +19,7 @@ body {
 
     &__text {
       margin-bottom: 30px;
+      font-size: 30px;
     }
 
     &__btn {
@@ -32,6 +33,22 @@ body {
       display: inline-block;
       font-size: 16px;
       cursor: pointer;
+      transition: 0.5s;
+      transition-property: transform;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+@media (max-width: 810px) {
+  .not-found-page {
+    &__main {
+      &__text {
+        margin-bottom: 30px;
+        font-size: 19px;
+      }
     }
   }
 }
